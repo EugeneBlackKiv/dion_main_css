@@ -61,7 +61,7 @@ export class CyclicalLogo extends HTMLElement {
           width: 94px;
           height: 94px;
           aspect-ratio: 1/1;
-          background: url(/images/logo_back.png) lightgray 50% / cover no-repeat;
+          background: url(./images/logo_back.png) lightgray 50% / cover no-repeat;
         }
 
       </style>
