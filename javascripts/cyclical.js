@@ -37,6 +37,7 @@ export class CyClical extends HTMLElement {
 
         .punctat {
           animation: rotate-punct 120s linear infinite;
+          will-change: transform;
         }
 
         @keyframes rotate-punct {
@@ -50,6 +51,7 @@ export class CyClical extends HTMLElement {
 
         .semi_1 {
           animation: rotate-s1 30s linear infinite;
+          will-change: transform;
         }
 
         @keyframes rotate-s1 {
@@ -63,6 +65,7 @@ export class CyClical extends HTMLElement {
 
         .semi_2 {
           animation: rotate-s2 60s linear infinite;
+          will-change: transform;
         }
 
         @keyframes rotate-s2 {
@@ -76,6 +79,7 @@ export class CyClical extends HTMLElement {
 
         .semi_3 {
           animation: rotate-s3 90s linear infinite;
+          will-change: transform;
         }
 
         @keyframes rotate-s3 {
@@ -88,6 +92,7 @@ export class CyClical extends HTMLElement {
         }
         .semi_4 {
           animation: rotate-s4 120s linear infinite;
+          will-change: transform;
         }
 
         @keyframes rotate-s4 {
@@ -100,6 +105,7 @@ export class CyClical extends HTMLElement {
         }
         .semi_5 {
           animation: rotate-s5 240s linear infinite;
+          will-change: transform;
         }
 
         @keyframes rotate-s5 {
@@ -112,6 +118,7 @@ export class CyClical extends HTMLElement {
         }
         .semi_6 {
           animation: rotate-s6 480s linear infinite;
+          will-change: transform;
         }
 
         @keyframes rotate-s6 {
@@ -125,6 +132,7 @@ export class CyClical extends HTMLElement {
 
         .raze_1 {
           animation: raze-r1 30s linear infinite;
+          will-change: transform;
         }
 
         @keyframes raze-r1 {
@@ -141,6 +149,7 @@ export class CyClical extends HTMLElement {
 
         .light_1 {
           animation: light-l1 6s linear infinite;
+          will-change: transform, opacity;
         }
 
         @keyframes light-l1 {
@@ -160,6 +169,7 @@ export class CyClical extends HTMLElement {
 
         .light_2 {
           animation: light-l2 7s linear infinite;
+          will-change: transform, opacity;
         }
 
         @keyframes light-l2 {
@@ -176,6 +186,7 @@ export class CyClical extends HTMLElement {
 
         .light_3 {
           animation: light-l3 8s linear infinite;
+          will-change: transform, opacity;
         }
 
         @keyframes light-l3 {
@@ -196,6 +207,7 @@ export class CyClical extends HTMLElement {
           animation: prim-anim linear both;
           animation-timeline: view();
           animation-range: cover 4% cover 20%;
+          will-change: transform, opacity;
         }
         @keyframes prim-anim {
           0% {
@@ -214,6 +226,7 @@ export class CyClical extends HTMLElement {
           animation: sec-anim linear both;
           animation-timeline: view();
           animation-range: cover 8% cover 27%;
+          will-change: transform, opacity;
         }
         @keyframes sec-anim {
           0% {
@@ -232,6 +245,7 @@ export class CyClical extends HTMLElement {
           animation: ter-anim linear both;
           animation-timeline: view();
           animation-range: cover 10% cover 30%;
+          will-change: transform, opacity;
         }
         @keyframes ter-anim {
           0% {
@@ -250,6 +264,7 @@ export class CyClical extends HTMLElement {
           animation: qui-anim linear both;
           animation-timeline: view();
           animation-range: cover 30% cover 48%;
+          will-change: transform, opacity;
         }
         @keyframes qui-anim {
           0% {
@@ -271,6 +286,7 @@ export class CyClical extends HTMLElement {
           animation: point-anim linear both;
           animation-timeline: view();
           animation-range: cover -30% cover 12%;
+          will-change: transform, opacity;
         }
        
         @keyframes point-anim {

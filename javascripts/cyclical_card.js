@@ -36,6 +36,7 @@ export class CyclicalCard extends HTMLElement {
         
         .punctat{
           animation: rotate-punct 120s linear infinite;
+          will-change: transform;
         }
         
         @keyframes rotate-punct {
@@ -49,6 +50,7 @@ export class CyclicalCard extends HTMLElement {
         
         .semi_1{
           animation: rotate-s1 30s linear infinite;
+          will-change: transform;
         }
         
         @keyframes rotate-s1 {
@@ -62,6 +64,7 @@ export class CyclicalCard extends HTMLElement {
         
         .semi_2{
           animation: rotate-s2 60s linear infinite;
+          will-change: transform;
         }
         
         @keyframes rotate-s2 {
@@ -75,6 +78,7 @@ export class CyclicalCard extends HTMLElement {
         
         .semi_3{
           animation: rotate-s3 90s linear infinite;
+          will-change: transform;
         }
         
         @keyframes rotate-s3 {
@@ -87,6 +91,7 @@ export class CyclicalCard extends HTMLElement {
         }
         .semi_4{
           animation: rotate-s4 120s linear infinite;
+          will-change: transform;
         }
         
         @keyframes rotate-s4 {
@@ -99,6 +104,7 @@ export class CyclicalCard extends HTMLElement {
         }
         .semi_5{
           animation: rotate-s5 240s linear infinite;
+          will-change: transform;
         }
         
         @keyframes rotate-s5 {
@@ -111,6 +117,7 @@ export class CyclicalCard extends HTMLElement {
         }
         .semi_6{
           animation: rotate-s6 480s linear infinite;
+          will-change: transform;
         }
         
         @keyframes rotate-s6 {
@@ -124,6 +131,7 @@ export class CyclicalCard extends HTMLElement {
         
         .raze_1{
           animation: raze-r1 30s linear infinite;
+          will-change: transform;
         }
         
         @keyframes raze-r1 {
@@ -140,6 +148,7 @@ export class CyclicalCard extends HTMLElement {
         
         .light_1{
           animation: light-l1 6s linear infinite;
+          will-change: opacity;
         }
         
         @keyframes light-l1 {
@@ -159,6 +168,7 @@ export class CyclicalCard extends HTMLElement {
         
         .light_2{
           animation: light-l2 7s linear infinite;
+          will-change: opacity;
         }
         
         @keyframes light-l2 {
@@ -175,6 +185,7 @@ export class CyclicalCard extends HTMLElement {
         
         .light_3{
           animation: light-l3 8s linear infinite;
+          will-change: opacity;
         }
         
         @keyframes light-l3 {

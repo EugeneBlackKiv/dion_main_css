@@ -41,6 +41,8 @@ export class StatisticDate extends HTMLElement {
           animation: stat_prim linear forwards;
           animation-timeline: view();
           animation-range: cover 5% cover 30%;
+          
+          will-change: transform, opacity;
         }
         @keyframes stat_prim {
           from {
@@ -83,6 +85,7 @@ export class StatisticDate extends HTMLElement {
           animation: prim-anim linear both;
           animation-timeline: view();
           animation-range: contain 40% contain 56%;
+          will-change: transform, opacity;
 
         }
         @keyframes prim-anim {
@@ -106,6 +109,7 @@ export class StatisticDate extends HTMLElement {
           animation: sec-anim linear both;
           animation-timeline: view();
           animation-range: contain 10% contain 28%;
+          will-change: transform, opacity;
 
         }
         @keyframes sec-anim {
@@ -128,7 +132,7 @@ export class StatisticDate extends HTMLElement {
           animation: ter-anim linear both;
           animation-timeline: view();
           animation-range: contain 4% contain 20%;
-
+          will-change: transform, opacity;
         }
         @keyframes ter-anim {
           0% {
