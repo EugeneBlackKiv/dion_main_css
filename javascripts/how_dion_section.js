@@ -35,9 +35,10 @@ export class HowSection extends HTMLElement {
           transform: translateY(-140px) scale(0.8);
           opacity: 0;
 
-          animation: title-anim linear forwards;
+          animation: title-anim linear both;
           animation-timeline: view();
           animation-range: cover 5% cover 30%;
+          will-change: transform, opacity;
         }
         @keyframes title-anim {
           from {
@@ -85,9 +86,11 @@ export class HowSection extends HTMLElement {
 
           transform: perspective(600px) rotateX(45deg) scale(0.8);  
           
-          animation: card-anim linear forwards;
+          animation: card-anim linear both;
           animation-timeline: view();
           animation-range: entry 0% contain 10%;
+          will-change: transform;
+          backface-visibility: hidden;
         }
         @keyframes card-anim {
           from {
@@ -144,6 +147,7 @@ export class HowSection extends HTMLElement {
           animation-duration: 6s;
           animation-timing-function: ease-in-out;
           animation-iteration-count: infinite;
+          will-change: transform, opacity;
         }
         
         @keyframes animate-search_decor_1 {
@@ -178,6 +182,7 @@ export class HowSection extends HTMLElement {
           animation-duration: 6s;
           animation-timing-function: ease-in-out;
           animation-iteration-count: infinite;
+          will-change: transform, opacity;
         }
         
         @keyframes animate-search_fundal {
@@ -205,9 +210,11 @@ export class HowSection extends HTMLElement {
           transform: translateX(-50%) translateY(80px) perspective(600px) rotateX(48deg) scale(0.8) ;
           opacity: 0;
           
-          animation: logo-anim linear forwards;
+          animation: logo-anim linear both;
           animation-timeline: view();
           animation-range: contain 50% contain 80%;
+          will-change: transform, opacity;
+          backface-visibility: hidden;
         }
         @keyframes logo-anim {
           from {
@@ -219,24 +226,6 @@ export class HowSection extends HTMLElement {
             opacity: 1;
           }
         }
-        /*  transform: translateX(-50%) translateY(80px) scale(0.8);*/
-        /*  opacity: 0;*/
-        /*  */
-        /*  */
-        /*  animation: logo-anim linear forwards;*/
-        /*  animation-timeline: view();*/
-        /*  animation-range: contain 50% contain 80%;*/
-        /*}*/
-        /*@keyframes logo-anim {*/
-        /*  from {*/
-        /*    transform: translateX(-50%) translateY(-80px) scale(0.8);*/
-        /*    opacity: 0;*/
-        /*  }*/
-        /*  to {*/
-        /*    transform: translateX(-50%) translateY(0) scale(1);*/
-        /*    opacity: 1;*/
-        /*  }*/
-        /*}*/
       </style>
 
       <div class="how_dion_section">
