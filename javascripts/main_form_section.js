@@ -14,7 +14,9 @@ export class MainForm extends HTMLElement {
           align-items: center;
           align-self: stretch;
           
-          animation: form-anim-start 500ms linear forwards;
+          animation: form-anim-start 500ms linear both;
+          will-change: transform;
+          backface-visibility: hidden;
         }
         
         @keyframes form-anim-start {
@@ -44,9 +46,11 @@ export class MainForm extends HTMLElement {
           
           transform: perspective(600px) rotateX(0) scale(1); 
           
-          animation: card-anim linear forwards;
+          animation: card-anim linear both;
           animation-timeline: view();
-          animation-range: contain 64% contain 100%;*/
+          animation-range: contain 64% contain 100%;
+          will-change: transform, opacity;
+          backface-visibility: hidden;
         }
         @keyframes card-anim {
           from {
@@ -58,21 +62,6 @@ export class MainForm extends HTMLElement {
             opacity: 0;
           }
         }
-         
-        /*  animation: form-anim linear forwards;*/
-        /*  animation-timeline: view();*/
-        /*  animation-range: contain 64% contain 100%;*/
-        /*}*/
-        /*@keyframes form-anim {*/
-        /*  from {*/
-        /*    transform: translateY(0) scale(1);*/
-        /*    opacity: 1;*/
-        /*  }*/
-        /*  to {*/
-        /*    transform: translateY(-80px) scale(0.8);*/
-        /*    opacity: 0;*/
-        /*  }*/
-        /*}*/
         
         .inputs_group {
           display: flex;

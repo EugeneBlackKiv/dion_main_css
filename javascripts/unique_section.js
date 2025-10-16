@@ -47,6 +47,8 @@ export class UniqueSection extends HTMLElement {
           animation: title-anim linear forwards;
           animation-timeline: view();
           animation-range: cover 5% cover 30%;
+          will-change: transform, opacity;
+          
         }
         @keyframes title-anim {
           from {
@@ -100,6 +102,8 @@ export class UniqueSection extends HTMLElement {
           animation: card-anim linear forwards;
           animation-timeline: view();
           animation-range: entry 0% contain 10%;
+          will-change: transform;
+          backface-visibility: hidden;
         }
         @keyframes card-anim {
           from {
@@ -147,9 +151,8 @@ export class UniqueSection extends HTMLElement {
         .vs_arg {
           display: flex;
           padding: 8px 16px;
-          align-items: center
+          align-items: center;
           align-self: stretch;
-
         }
         .vs_arg_label {
           flex: 1 0 0;
