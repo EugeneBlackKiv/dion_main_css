@@ -60,6 +60,20 @@ export class MainLogo extends HTMLElement {
           left: 50%;
           transform: translate(-50%, -10%);
         }
+        .imaginefundal{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          
+          border-radius: 94px;
+          z-index: -1;
+          
+          width: 63px;
+          height: 63px;
+          aspect-ratio: 1/1;
+          background: url(./images/logo_back.png) lightgray 50% / cover no-repeat;
+        }
         
 
       </style>
@@ -73,10 +87,11 @@ export class MainLogo extends HTMLElement {
             </svg>       
           </div>
           <div class="masca_fundal"></div>
-          <video class="positionare_video" autoplay muted loop>
-            <source src="./video/video_logo_2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <div class="imaginefundal"></div>
+<!--          <video class="positionare_video" autoplay muted loop>-->
+<!--            <source src="./video/video_logo_2.mp4" type="video/mp4">-->
+<!--            Your browser does not support the video tag.-->
+<!--          </video>-->
         </div>
         
       </div>

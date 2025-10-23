@@ -1,42 +1,61 @@
 export class PlaneFly extends HTMLElement {
   constructor() {
-    super();
-    this.attachShadow({mode: 'open'});
+    super()
+    this.attachShadow({ mode: 'open' })
     this.shadowRoot.innerHTML = `
       <style>
         .container{
           position: relative;
-          overflow: hidden; 
           width: 100vw;
           height: 110vh;
-          background: linear-gradient(0deg, #805BFF -134.12%, var(--surface-surface, #1E1E1E) 77.07%);
+          contain: content;
+          /*background: linear-gradient(0deg, #805BFF -134.12%, var(--surface-surface, #1E1E1E) 77.07%);*/
         }
         
-        .punctat{
+        .airplane{
           position: absolute;
-          top: 50%;
+          top: 40%;
           left: 50%;
-          transform: translate(-50%, 50%);
+          transform: translateX(-50%);
           animation: rotate-punct 50s linear infinite;
+          
+          will-change: transform;
+          backface-visibility: hidden;
+          z-index: 2;
         }
         
         @keyframes rotate-punct {
           0% {
-            transform: translate(-50%,0%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
           }
           100% {
-            transform: translate(-50%, 0%) rotate(360deg);
+            transform: translateX(-50%) rotate(360deg) ;
           }
         }
       
         .plane_color{
-          fill: var(--surface-surface);
+          fill: var(--surface-surface, #1E1E1E);
         }
         
+        .cerc {
+          width: 400px;
+          height: 400px;
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 400px;
+          background: var(--primary-primary, #805BFF);
+          filter: blur(180px);
+          will-change: transform, filter;
+          backface-visibility: hidden;
+        }
+        
+
       </style>
       
       <div class="container">
-          <svg class="punctat"  width="1157" height="1157" viewBox="0 0 1157 1157" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="airplane"  width="1157" height="1157" viewBox="0 0 1157 1157" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="plane_color" d="M571.629 318.728L567.674 318.68L574.531 296.991L560.046 295.453L554.673 303.553L552.037 303.52L554.806 292.668L552.302 281.751L554.939 281.783L560.113 290.011L574.631 288.827L568.305 266.978L572.26 267.026L585.178 288.956L593.088 289.052C595.276 289.079 606.265 289.723 606.222 293.295C606.178 296.866 595.177 297.242 592.988 297.216L585.078 297.119L571.629 318.728Z" fill="white"/>
           <path class="plane_color" d="M353.311 191.983L349.866 193.927L344.905 171.727L331.607 177.672L331.027 187.374L328.731 188.67L325.676 177.894L318.029 169.711L320.326 168.414L328.931 172.932L340.892 164.618L324.45 148.899L327.894 146.955L350.078 159.433L356.967 155.544C358.873 154.469 368.699 149.508 370.455 152.618C372.211 155.729 362.886 161.578 360.98 162.654L354.091 166.543L353.311 191.983Z" fill="white"/>
           <path class="plane_color" d="M713.035 55.1045L709.223 54.0519L721.371 34.8205L707.753 29.6492L700.497 36.1153L697.955 35.4136L703.394 25.6224L703.749 14.4277L706.291 15.1295L709.202 24.4027L723.544 26.9508L722.983 4.21058L726.796 5.26322L733.711 29.7578L741.336 31.8631C743.446 32.4456 753.909 35.8638 752.959 39.3068C752.008 42.7498 741.273 40.3153 739.164 39.7328L731.538 37.6275L713.035 55.1045Z" fill="white"/>
@@ -54,16 +73,16 @@ export class PlaneFly extends HTMLElement {
           <path class="plane_color" d="M410.682 695.374L411.932 697.208L399.754 701.031L403.706 708.186L409.158 708.052L409.992 709.275L404.111 711.492L399.896 716.155L399.063 714.932L401.182 709.906L395.968 703.611L387.956 713.548L386.706 711.714L392.635 698.721L390.135 695.052C389.443 694.038 386.205 688.778 387.861 687.649C389.517 686.52 393.229 691.458 393.92 692.472L396.42 696.141L410.682 695.374Z" fill="white"/>
           <path class="plane_color" d="M179.016 500.853L178.583 503.03L167.322 497.02L164.987 504.853L168.903 508.649L168.615 510.1L162.912 507.458L156.632 507.718L156.921 506.267L161.991 504.258L162.829 496.127L150.126 497.373L150.558 495.196L163.983 490.321L164.849 485.968C165.088 484.763 166.572 478.767 168.538 479.158C170.504 479.548 169.581 485.656 169.342 486.861L168.476 491.215L179.016 500.853Z" fill="white"/>
           </svg>
+
+          <div class="cerc"></div>
       </div>
       
       
-    `;
+    `
   }
 
   // connectedCallback() {
   // }
-
 }
 
-customElements.define('plane-fly', PlaneFly);
-
+customElements.define('plane-fly', PlaneFly)

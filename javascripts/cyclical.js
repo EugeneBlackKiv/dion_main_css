@@ -48,7 +48,7 @@ export class CyClical extends HTMLElement {
             transform: translate(-50%, -50%) rotate(360deg);
           }
         }
-
+        
         .semi_1 {
           animation: rotate-s1 30s linear infinite;
           will-change: transform;
@@ -76,7 +76,7 @@ export class CyClical extends HTMLElement {
             transform: translate(-50%, -50%) rotate(-360deg);
           }
         }
-
+        
         .semi_3 {
           animation: rotate-s3 90s linear infinite;
           will-change: transform;
@@ -134,7 +134,7 @@ export class CyClical extends HTMLElement {
           animation: raze-r1 30s linear infinite;
           will-change: transform;
         }
-
+        
         @keyframes raze-r1 {
           0% {
             transform: translate(-50%, -50%) scale(0.8) rotate(0deg);
@@ -241,7 +241,7 @@ export class CyClical extends HTMLElement {
         .ter{
           transform: translate(-50%, -50%) scale(0);
           opacity: 0.5;
-
+        
           animation: ter-anim linear both;
           animation-timeline: view();
           animation-range: cover 10% cover 30%;
@@ -342,6 +342,7 @@ export class CyClical extends HTMLElement {
         >
           <circle cx="338" cy="338" r="337" stroke="#805BFF" />
         </svg>
+        
 
         <svg
           class="punctat"
