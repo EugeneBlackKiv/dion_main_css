@@ -48,7 +48,7 @@ export class MainForm extends HTMLElement {
           
           animation: card-anim linear both;
           animation-timeline: view();
-          animation-range: contain 40% contain 120%;
+          animation-range: contain 64% contain 148%;
           will-change: transform, opacity;
           backface-visibility: hidden;
         }
@@ -58,7 +58,7 @@ export class MainForm extends HTMLElement {
             opacity: 1;
           }
           to {
-            transform: perspective(600px) rotateX(-16deg) scale(0.9);
+            transform: perspective(600px) rotateX(-20deg) scale(0.9);
             opacity: 0;
           }
         }
