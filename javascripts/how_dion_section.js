@@ -240,17 +240,17 @@ export class HowSection extends HTMLElement {
 
           animation: logo-anim linear both;
           animation-timeline: view();
-          animation-range: contain 55% contain 80%;
+          animation-range: contain 65% contain 90%;
           will-change: transform, opacity;
           backface-visibility: hidden;
         }
         @keyframes logo-anim {
           from {
-            transform: translateX(-50%) translateY(-280px) scale(1);
+            transform: translateX(-50%) translateY(-160px) scale(1);
             opacity: 0;
           }
           to {
-            transform: translateX(-50%) translateY(0) scale(0.8);
+            transform: translateX(-50%) translateY(0) scale(0.6);
             opacity: 1;
           }
         }

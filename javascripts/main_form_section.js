@@ -58,7 +58,7 @@ export class MainForm extends HTMLElement {
             opacity: 1;
           }
           to {
-            transform: perspective(600px) rotateX(-24deg) scale(0.6);
+            transform: perspective(600px) rotateX(-16deg) scale(0.9);
             opacity: 0;
           }
         }
