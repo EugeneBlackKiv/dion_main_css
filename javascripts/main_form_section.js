@@ -48,7 +48,7 @@ export class MainForm extends HTMLElement {
           
           animation: card-anim linear both;
           animation-timeline: view();
-          animation-range: contain 64% contain 100%;
+          animation-range: contain 40% contain 120%;
           will-change: transform, opacity;
           backface-visibility: hidden;
         }

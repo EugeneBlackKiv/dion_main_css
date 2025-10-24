@@ -240,7 +240,7 @@ export class HowSection extends HTMLElement {
 
           animation: logo-anim linear both;
           animation-timeline: view();
-          animation-range: contain 45% contain 80%;
+          animation-range: contain 55% contain 80%;
           will-change: transform, opacity;
           backface-visibility: hidden;
         }
