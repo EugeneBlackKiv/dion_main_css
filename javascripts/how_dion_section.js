@@ -232,10 +232,10 @@ export class HowSection extends HTMLElement {
         }
         .logo_fundal {
           position: absolute;
-          top: -240px;
+          top: -180px;
           left: 50%;
 
-          transform: translateX(-50%) translateY(-280px);
+          transform: translateX(-50%) translateY(-120px);
           opacity: 0;
 
           animation: logo-anim linear both;
@@ -246,7 +246,7 @@ export class HowSection extends HTMLElement {
         }
         @keyframes logo-anim {
           from {
-            transform: translateX(-50%) translateY(-160px) scale(1);
+            transform: translateX(-50%) translateY(-120px) scale(1);
             opacity: 0;
           }
           to {
